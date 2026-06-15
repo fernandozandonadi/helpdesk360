@@ -1,0 +1,413 @@
+/* ================================================
+   TÍTULOS E SEÇÕES
+   ================================================ */
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-primary-light);
+}
+
+.page-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.secao-dashboard {
+  margin-top: 32px;
+}
+
+.secao-titulo {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+/* ================================================
+   FORMULÁRIO NOVO CHAMADO
+   ================================================ */
+
+.form-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+}
+
+.ia-resultado {
+  background-color: #e2efda;
+  border: 1px solid #70ad47;
+  border-left: 4px solid #375623;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.ia-titulo {
+  font-weight: bold;
+  color: #375623;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.ia-loading {
+  color: var(--color-primary);
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 8px 0;
+}
+
+/* ================================================
+   EMPTY STATE
+   ================================================ */
+
+.empty-state {
+  color: var(--color-neutral-5);
+  font-size: 0.95rem;
+  padding: 24px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  border: 1px dashed #cccccc;
+}
+
+/* ================================================
+   CARDS DE CHAMADO
+   ================================================ */
+
+.card-chamado {
+  border-left: 4px solid var(--color-primary);
+  border-radius: 4px;
+  padding: 12px 16px;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.card-chamado:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+.card-chamado.prioridade-critica {
+  border-left-color: #c00000;
+}
+.card-chamado.prioridade-alta {
+  border-left-color: #ed7d31;
+}
+.card-chamado.prioridade-media {
+  border-left-color: #ffb900;
+}
+.card-chamado.prioridade-baixa {
+  border-left-color: #70ad47;
+}
+
+.card-chamado,
+.card-chamado *,
+.lista-chamados *,
+.list-item,
+.list-item * {
+  color: #333333;
+}
+
+.card-chamado .sla-violado {
+  color: #c00000;
+}
+
+.card-chamado .sla-ok {
+  color: #375623;
+}
+
+.card-titulo {
+  font-size: 1rem;
+  color: #1f4e79;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.card-descricao {
+  font-size: 0.88rem;
+  color: #595959;
+  margin-bottom: 8px;
+}
+
+.card-meta {
+  font-size: 0.78rem;
+  color: #888888;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.card-body {
+  color: #595959 !important;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+/* ================================================
+   SLA
+   ================================================ */
+
+.sla-violado {
+  color: #c00000;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+.sla-ok {
+  color: #375623;
+  font-size: 0.85em;
+}
+
+/* ================================================
+   BADGES
+   ================================================ */
+
+[class^="badge-"] {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge-aberto {
+  background-color: #bdd7ee;
+  color: #1f4e79;
+}
+.badge-ematendimento {
+  background-color: #fff2cc;
+  color: #7f6000;
+}
+.badge-aguardandousuario {
+  background-color: #ead1ff;
+  color: #6b2fa0;
+}
+.badge-resolvido {
+  background-color: #e2efda;
+  color: #375623;
+}
+.badge-fechado {
+  background-color: #f2f2f2;
+  color: #595959;
+}
+.badge-cancelado {
+  background-color: #f2f2f2;
+  color: #c00000;
+}
+.badge-critica {
+  background-color: #fce4d6;
+  color: #c00000;
+  font-weight: bold;
+}
+.badge-alta {
+  background-color: #fce4d6;
+  color: #ed7d31;
+}
+.badge-media {
+  background-color: #fff2cc;
+  color: #bf8f00;
+}
+.badge-baixa {
+  background-color: #e2efda;
+  color: #375623;
+}
+
+/* ================================================
+   DASHBOARD — INDICADORES
+   ================================================ */
+
+.indicadores-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.indicador-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid var(--color-primary);
+}
+
+.indicador-card .number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.indicador-card .label {
+  font-size: 0.85rem;
+  color: #595959;
+  margin-top: 4px;
+}
+
+.indicador-card.indicador-success {
+  border-top-color: #375623;
+}
+.indicador-card.indicador-success .number {
+  color: #375623;
+}
+.indicador-card.indicador-danger {
+  border-top-color: #c00000;
+}
+.indicador-card.indicador-danger .number {
+  color: #c00000;
+}
+
+/* ================================================
+   DASHBOARD — GRÁFICOS
+   ================================================ */
+
+.graficos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.grafico-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.grafico-card .grafico-titulo {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+/* ================================================
+   DETALHE DO CHAMADO
+   ================================================ */
+
+.detalhe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.detalhe-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.acoes-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.detalhe-card,
+.detalhe-card * {
+  color: #333333;
+}
+
+.detalhe-card .secao-titulo {
+  color: var(--color-primary);
+}
+
+/* ================================================
+   COMENTÁRIOS
+   ================================================ */
+
+.comentario-item {
+  border-bottom: 1px solid #eeeeee;
+  padding: 12px 0;
+}
+
+.comentario-item:last-child {
+  border-bottom: none;
+}
+
+.comentario-autor {
+  font-size: 0.82rem;
+  color: #595959;
+  margin-bottom: 4px;
+}
+
+/* ================================================
+   HISTÓRICO DE STATUS
+   ================================================ */
+
+.historico-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.88rem;
+  color: #595959;
+}
+
+.historico-item:last-child {
+  border-bottom: none;
+}
+
+/* ================================================
+   LISTA DE CHAMADOS E FILTROS
+   ================================================ */
+
+.filtros-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f2f2f2;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.lista-chamados {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ================================================
+   RESPONSIVIDADE
+   ================================================ */
+
+@media (max-width: 768px) {
+  .indicadores-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .graficos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detalhe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filtros-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
